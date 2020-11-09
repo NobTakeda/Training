@@ -1,0 +1,9 @@
+div{
+	display:inline-block;
+	width:200px;
+	height:200px;
+	border:1px solid #333;
+}
+div + div{
+	margin-left:50px;
+}
