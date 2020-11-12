@@ -7,23 +7,23 @@ public class Ball99{
 		int tempB=0;
 		int sumA=0;
 		int sumB=0;
+		int count=0;
 
 		for(int i=0;i<50;i++){
-			int ran=new Random().nextInt(balls.length-i);
-			tempA=ran;
-			balls[balls.length-1-i]=ran;
-			isPicked[isPicked.length-1-i]=true;
-
-			while(true){
-				ran=new Random().nextInt(balls.length-i);
-				if(isPicked[ran]){
-					continue;
-				}else{
-					break;
-				}
-			tempB=ran;
-			isPicked[ran]=true;		
-			
+			int ran=new Random().nextInt(balls.length-i)+1;
+			if(isPicked[ran-1]){
+				continue;
+			}else if(count%2==0){
+				tempA=ran;
+				balls[balls.length-1-i]=ran;
+				isPicked[ran-1]=true;
+				count++;
+			}else{
+				tempB=ran;
+				balls[balls.length-1-i]=ran;
+				isPicked[ran-1]=true;
+				count++;
+			}
 			System.out.println((i+1)+"回戦");
 			if(tempA<tempB){
 				System.out.printf("A:%d,B:%d...Bの勝ち%n",tempA,tempB);
@@ -39,7 +39,6 @@ public class Ball99{
 		System.out.printf("%d対%dでAの勝ち",sumA,sumB);
 		}else{
 		System.out.printf("%d対%dでBの勝ち",sumA,sumB);
-		}
 		}
 	}
 }
