@@ -15,14 +15,12 @@ public class Qtakeda{
 		System.out.println(Arrays.toString(numsB));
 		//ここまででnumsAとnumsBの出力終わり
 
-		int index=0;
 		int count=0;
 		boolean target=false;//一致するindexが存在するか判断する変数
 		for(int i=0;i<numsA.length;i++){
 			if(numsA[i]==numsB[i]){
 				count++;
-				index=i;
-				System.out.printf("index[%d],",index);
+				System.out.printf("index[%d],",i);
 				target=true;
 			}
 		}
