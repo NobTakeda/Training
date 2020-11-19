@@ -1,0 +1,142 @@
+body{
+	color:#333;
+}
+.container{
+	width:960px;
+	margin:0 auto;
+}
+header{
+	height:250px;
+	background-image:url(../images/header_bg.png);
+	background-size:cover;/*リンクした画像で領域を全部埋める指定*/
+}
+header h1{
+	font-size:80px;
+	text-align:center;
+	line-height:250px;
+}
+nav ul{/*ここでheightを指定してないので、子要素の大きさで縦幅が決まる*/
+	padding:5px 30px;
+	background:#666;
+	display:flex;/*親要素にdisplay:flex*/
+	justify-content:flex-end;/*並べる方向*/
+													 /*flex-direction:colmn;*/
+													 /*配置*/
+	/*flex-direction:column;*//*flexboxチートシート参照*/
+
+}
+
+nav ul li a{
+	display:block;
+	padding:5px 20px;
+	border-radius:5px;
+	background:#999;
+	color:white;
+	text-decoration:none;
+	margin:5px 10px;
+	border:1px solid #333;
+}
+
+/*属性セレクタ*/
+div[role=main]{
+	background:#eee;
+	padding:30px 30px 70px;
+}
+
+h2{
+	text-align:center;
+	font-size:30px;
+	margin-top:30px;
+}
+
+/*隣接セクタ（h2の次にあるp）*/
+
+h2 + p{
+	text-align:center;
+	margin-bottom:20px;
+}
+
+#infoBox{
+	display:flex;
+	/*align-items:flex-start;*/
+	/*↑では上揃い、	flex-endで下揃いになる*/
+}
+
+#infoBox .info{
+	position:relative;/*後でmoreを右下に配置したいのでここで基準点を宣言*/
+	border-radius:5px;
+	border:1px solid #333;
+	margin:20px 10px;
+	background:white;
+	min-width:220px;
+	/*幅を指定したい場合*/
+	/*flex-basis:30%*/
+	/*縦方向の配置*/
+	/*align-self:center;*/
+}
+
+#infoBox .info h3{
+	padding:5px 20px;
+	background:#666;
+	color:#eee;
+}
+
+#infoBox .info p{
+	padding:10px 20px 30px;
+}
+
+#infoBox .info p a{
+	position:absolute;
+	bottom:10px;
+	right:15px;
+}
+
+#blogBox{
+	display:flex;/*要素が端まで行ったら折り返す*/
+	flex-wrap:wrap;
+	justify-content:space-between;
+	/*flex-direction:column;これを追記で箇条書き配置*/
+}
+
+.blogItem{
+	position:relative;
+	display:flex;
+	/*縦方向の配置*/
+	align-items:flex-start;/*これを設定しないと小さい要素が大きい要素に合わせてのびてしまう*/
+	/*flexitemの幅指定*/
+	flex-basis:43%;/*自分の大きさ*/
+	border:1px solid #333;
+	border-radius:5px;
+	padding:16px 16px 30px;
+	margin:10px;
+	background:white;
+}
+
+.blogItem > a{/*直下のaなので>を指定*/
+	position:absolute;
+	bottom:10px;
+	right:20px;
+}
+
+.blogItem:nth-child(even){/*blogItemの偶数番目と言う意味*/
+	flex-direction:row-reverse;/*配置を行方向の逆順にする*/
+}
+
+.blogItem img{
+	width:130px;
+}
+
+.blogItem:nth-child(odd) img{
+	margin-right:10px;
+}
+
+.blogItem:nth-child(even) img{
+	margin-left:10px;
+}
+
+footer{
+	text-align:center;
+	padding:10px 0;
+	background:#666;
+	color:white;
+}

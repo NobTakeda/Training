@@ -1,0 +1,30 @@
+# 11月19日のまとめ
+
+## 1時間目
+
+テスト答え合わせ
+
+## 2時間目
+
+まとめファイルを20201119に作成、
+mdファイルをchromeで見られるように拡張機能追加  
+(mdのプラグインを入れた後、chrom右上のボタンから設定。
+mdファイル自体もchromeで開くように指定）  
+参照:[「Markdown Viewer」でmarkdownをいい感じに表示する](https://qiita.com/takachan_coding/items/7a0978a70208e482aae9)
+
+[Git(間違えてコミットしてしまったら)](https://joytas.net/programming/git/amend-reset)
+
+## 3時間目
+
+index.htmlのソース記述、mainn.cssの記述を途中まで  
+[flexbox](https://joytas.net/programming/website/flexbox)
+<a href="" target="_blank"></a>
+
+## 4時間目
+
+main.cssのflex部分の記述、解説
+
+## 5時間目
+
+main.cssのflex部分の記述、解説
+FLEXBOX FROGGYでの学習
