@@ -6,8 +6,8 @@ public class hirose2{
 		System.out.print("何回ふる？>");
 		int size=new Scanner(System.in).nextInt();
 		int[] temps=new int[member];//合計値保存用の配列temp[人数]を0で初期化
-		System.out.println("************");
 
+		System.out.println("************");
 		for(int i=0;i<temps.length;i++){
 			int sum=0;
 			int[] diceNums=makeArray(size);
@@ -17,7 +17,7 @@ public class hirose2{
 			System.out.println((i+1)+"番目:"+Arrays.toString(diceNums)+"合計:"+sum);
 			temps[i]=sum;
 
-			if(i==(temps.length-1) && judgeDraw(temps)==true){
+			if(i==(temps.length-1) && judgeDraw(temps)==true){//人数分回す配列の最後に勝ち負け判定
 				System.out.println("************");
 				System.out.println("引き分け");
 			}else if(i==(temps.length-1)){
