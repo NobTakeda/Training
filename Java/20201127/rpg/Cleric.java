@@ -12,14 +12,16 @@ public class Cleric{
 	}
 	public int pray(int sec){
 		int temp=new Random().nextInt(3)+sec;
+		/*
 		int real;
-		/*if(this.mp+temp>this.MAX_MP){
+		if(this.mp+temp>this.MAX_MP){
 			real=this.MAX_MP-this.mp;
 			this.mp=this.MAX_MP;
 		}else{
 			real=temp;
 		}*/
-		real=this.mp+temp > this.MAX_MP ? this.MAX_MP-this.mp : temp;
+		//real=this.mp+temp > this.MAX_MP ? this.MAX_MP-this.mp : temp;
+		int real=Math.min(this.MAX_MP - this.mp, temp);
 		this.mp+=real;
 		return real;
 	}

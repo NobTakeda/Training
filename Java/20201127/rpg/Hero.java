@@ -1,6 +1,15 @@
 public class Hero{
-	String name;
-	int hp=50;
+	String name;//フィールド
+	int hp=100;
+
+	public Hero(){}//これが無く下のコンストラクタだけの場合、名前なしでHero生成ができない
+	public Hero(String name){
+		this.name=name;
+	}
+	public Hero(String name,int hp){
+		this.name=name;
+		this.hp=hp;
+	}
 
 	public void sleep(){
 		this.hp=100;
