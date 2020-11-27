@@ -7,9 +7,9 @@ public class Hero{
 		this.name=name;
 	}
 	public Hero(String name,int hp){
-		this.name=name;
-		this.hp=hp;
-	}
+		this(name);//他のコンストラクタ（ここでは上のやつ）を呼び出して処理させている。
+		this.hp=hp;//コンストラクタの呼び出しは1行目に書くこと（1コンストラクタに1個しかできない）
+	}//コンストラクタでコンストラクタを呼び出すのを連続する処理はできる。
 
 	public void sleep(){
 		this.hp=100;
