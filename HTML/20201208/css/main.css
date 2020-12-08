@@ -1,0 +1,25 @@
+div{
+	margin:0 auto;
+	width:960px;
+	height:500px;
+	background-color:#eee;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+/*
+#babybox{
+	height:200px;
+	width:960px;
+}
+
+.babyitem{
+	display:flex;
+	justify-content:space-between;
+}
+*/
+img{
+	height:200px;
+	width:200px;
+	border-radius:50%;
+}
