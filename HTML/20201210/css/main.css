@@ -1,0 +1,40 @@
+div{
+	margin:0 auto;
+	width:960px;
+	height:500px;
+	background-color:#eee;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.nakami{
+	width:600px;
+	height:300px;
+	display:flex;
+	position:relative;
+	z-index:2;
+	align-items:center;
+	justify-content:center;
+	background-color:yellow;
+}
+
+.nakami p{
+	font-size:60px;
+}
+
+.circle{
+	height:100px;
+	width:100px;
+	background-color:red;
+	border-radius:50%;
+	position:absolute;
+	top:-50px;
+	left:-50px;
+	z-index:1;
+}
+
+.circle p{
+	font-size:16px;
+	color:white;
+}
