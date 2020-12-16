@@ -1,0 +1,47 @@
+.fl{
+	float:left;
+}
+
+.fr{
+	float:right;
+}
+
+.cb{
+	clear:both;
+}
+
+#wrapper{
+	width:80%;
+	margin:0 auto;
+}
+
+img{
+	/*マージンはfloat指定の要素に対して指定する*/
+	margin:0 0 20px 20px;
+	width:200px;
+}
+
+#blockContainer{
+	position:relative;
+	background:aqua;
+	width:400px;
+	height:200px;
+	
+}
+
+#red{
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	width:30px;
+	height:30px;
+	background:red;
+	z-index:2;
+}
+#blue{
+	position:relative;
+	width:400px;
+	height:200px;
+	background:blue;
+	z-index:1;
+}

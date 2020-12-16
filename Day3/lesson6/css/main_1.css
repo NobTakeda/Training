@@ -1,0 +1,20 @@
+#container{ /*idに対しては#で当てる*/
+	/*コンテンツをブラウザに対してセンタリング*/
+	width:700px;
+	margin:0 auto;
+}
+
+header{
+	height:200px;/*要素の高さ*/
+	background-color:pink;
+}
+
+main{
+	height:500px;
+	background-color:aquamarine;
+}
+
+footer{
+	height:100px;
+	background-color:aqua;
+}

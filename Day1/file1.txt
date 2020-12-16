@@ -1,0 +1,36 @@
+ショートカット
+
+コピー＆ペースト
+ctrl+c　ctrl+v
+
+Hello World
+
+Hello World
+
+Hello World
+
+Hello World
+
+保存
+ctrl+s
+
+保存されていない場合は一番上のファイル名に*が付いている
+
+ひとつ前に戻る
+ctrl+z
+
+ひとつ後に進む
+ctrl+y
+
+全てを選択
+ctrl+a(all)
+
+デスクトップを表示
+win+d(desktop)
+
+アプリ切り替え
+alt+tab
+
+新規作成
+ctrl+n(new)
+

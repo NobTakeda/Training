@@ -1,0 +1,80 @@
+header{
+  position:relative;
+  width:100%;/*ここではイメージのため書いているが無記入でも100％になる*/
+  padding-top:34%;/*横100に対して高さ34%の比率を与えている。*/
+}
+header h1{ /*headerの中のh1という意味となる*/
+  position: absolute;
+  top:0;
+  right:0;
+  width:100%;/*headerの絶対配置に対して全部使うと宣言している*/
+  height:100%;
+  background-image:url(../images/headerImg.png);/*このcssファイルから見たパス*/
+  background-size:cover;
+  box-sizing: border-box;/*paddingやborderなどで罫線を追加した状態で指定したサイズになるようにするためのコマンド*/
+  padding:10%;
+  font-size:3.5vw;/*viewport widthの略。画面幅の意*/
+  color:#345;/*文字色*/
+}
+main h2{ /*heightを指定していないので、高さは文字の大きさ+paddingとなっている*/
+  background: #345;
+  color:white;
+  text-align: center;
+  font-size:3vw;
+  padding:5px 0;
+}
+.imgFull{/*画面に対してフルの幅でつけるためのclass*/
+  display: block;/*初期でインライン要素である画像をブロック要素に指定しないと、画像が文字扱いのままなので意図しない隙間ができたりする*/
+  width:100%;
+}
+.youtubeContainer{
+  position: relative;
+  width:80%;/*container領域の80%の意味*/
+  padding-top:45%;/*元々の画像比率と上記の80%を対応させて計算して記述。今回は100:56.25を80%にした。*/
+  margin:2vh auto;/*上下→viewport height。ブラウザの高さの2%の意味。*/
+}
+.youtubeContainer iframe{
+  position: absolute;
+  top:0;
+  right:0;
+  width:100% !important;/*要素の詳細度を決めている。index.htmlで記述した要素よりも優先させるために記述している。*/
+  height:100% !important;/*今回はコピペしてきたソースのため、この記述で上書きしている。*/
+}
+
+#floatItems img{
+  display: block;
+  width:50%;
+border:1px solid #333;
+  box-sizing: border-box;
+  float:left;
+}
+footer{
+  text-align: right;/*右にベタ付き*/
+  padding-right:10px;/*ここでベタ付きから少し間を取る*/
+  color:#345;
+}
+/*1200px以上で適用*/
+@media screen and (min-width:1200px){
+  header h1{
+    font-size:3vw;
+  }
+}
+/*600px以下で適用*/
+@media screen and (max-width:600px){
+  header h1{
+    font-size:4vw;
+  }
+  main h2{
+    font-size:3.5vw;
+  }
+}
+
+/*480px以下で適用*/
+@media screen and (max-width:480px){
+  #floatItems img{
+  
+  width:100%;/*小さい端末で見た場合、画像幅を100%にすることで縦に並べるように変更している。*/
+
+ }
+}
+

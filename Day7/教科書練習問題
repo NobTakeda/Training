@@ -1,0 +1,9 @@
+JAVA教科書 p.135 練習3−1
+
+① if(weight == 60){}
+
+② if((age1+age2)*2 > 60){}
+
+③ if(age%2 != 0){}
+
+④ if(name.equals("湊")){}

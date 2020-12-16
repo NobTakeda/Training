@@ -1,0 +1,24 @@
+h1{
+	color:blue;
+	font-size:30px;
+}
+.red{
+	color:red;
+}
+.fs40{
+	font-size:40px;
+}
+.fs20{
+	font-size:20px;
+}
+.green{
+	color:green;
+}
+#favoriteword{
+	width:400px; /*ïù*/
+	padding-left:20px;/*ì‡ë§ÇÃó]îíÅiç∂ë§Åj*/
+	font-size:40px;
+	color:green;
+	border-left:5px solid green;
+	border-bottom:2px dotted green;
+}

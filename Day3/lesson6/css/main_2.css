@@ -1,0 +1,30 @@
+#container{ 
+	/*コンテンツをブラウザに対してセンタリング*/
+	width:700px;
+	margin:0 auto;
+}
+
+header{
+	height:200px;/*要素の高さ*/
+	background-color:pink;
+}
+
+#contents{
+	/*親要素に対してflex指定*/
+	display:flex;
+}
+main{
+	flex:1;
+	height:500px;
+	background-color:aquamarine;
+}
+
+aside{
+	/*こちらの幅を200pxに指定することで、mainの幅を可変にしている*/
+	width:200px;
+	background-color:yellow;
+}
+footer{
+	height:100px;
+	background-color:aqua;
+}
