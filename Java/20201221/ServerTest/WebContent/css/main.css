@@ -1,0 +1,10 @@
+@charset "UTF-8";
+body{
+	margin:auto;
+}
+p .great{
+	color=blue;
+	font-size:60px;
+	border-radius:15px;
+	background-color:red;
+}
